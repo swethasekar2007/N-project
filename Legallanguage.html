@@ -12,7 +12,7 @@
             padding: 0;
         }
         header {
-            background-color: #3e7272;
+            background-color: #5c9b9b;
             color: white;
             padding: 20px;
             text-align: center;
@@ -21,7 +21,7 @@
             padding: 20px;
         }
         button {
-            background-color: #3e7272;
+            background-color: #5c9b9b;
             color: white;
             padding: 10px;
             border: none;
@@ -38,12 +38,80 @@
 </head>
 <body>
     <header>
-        <h1>Legal Terms</h1>
+        <h1>Legal Terms Quiz</h1>
     </header>
     <div class="content">
         <form id="quizForm">
-            <!-- Questions Here... -->
-
+            <!-- Question 1 -->
+            <div class="question">
+                <h3>1. What is the meaning of 'Accomplice'?</h3>
+                <label><input type="radio" name="q1" value="A person who commits a crime alone">A person who commits a crime alone</label><br>
+                <label><input type="radio" name="q1" value="A person who helps another in committing a crime">A person who helps another in committing a crime</label><br>
+                <label><input type="radio" name="q1" value="A person who investigates crimes">A person who investigates crimes</label>
+            </div>
+            <!-- Question 2 -->
+            <div class="question">
+                <h3>2. What does 'Adjudication' refer to?</h3>
+                <label><input type="radio" name="q2" value="The process of making a formal judgment or decision">The process of making a formal judgment or decision</label><br>
+                <label><input type="radio" name="q2" value="The act of creating new laws">The act of creating new laws</label><br>
+                <label><input type="radio" name="q2" value="The settlement of a case without trial">The settlement of a case without trial</label>
+            </div>
+            <!-- Question 3 -->
+            <div class="question">
+                <h3>3. What is 'Adjournment' in legal terms?</h3>
+                <label><input type="radio" name="q3" value="Postponing a court proceeding to a later date">Postponing a court proceeding to a later date</label><br>
+                <label><input type="radio" name="q3" value="The final decision of a case">The final decision of a case</label><br>
+                <label><input type="radio" name="q3" value="The dismissal of a case">The dismissal of a case</label>
+            </div>
+            <!-- Question 4 -->
+            <div class="question">
+                <h3>4. What does 'Admission' mean in law?</h3>
+                <label><input type="radio" name="q4" value="A statement acknowledging something as true">A statement acknowledging something as true</label><br>
+                <label><input type="radio" name="q4" value="A request for a new trial">A request for a new trial</label><br>
+                <label><input type="radio" name="q4" value="A legal contract between two parties">A legal contract between two parties</label>
+            </div>
+            <!-- Question 5 -->
+            <div class="question">
+                <h3>5. What is an 'Affidavit'?</h3>
+                <label><input type="radio" name="q5" value="A written statement sworn under oath">A written statement sworn under oath</label><br>
+                <label><input type="radio" name="q5" value="A verbal testimony given in court">A verbal testimony given in court</label><br>
+                <label><input type="radio" name="q5" value="A document proving ownership">A document proving ownership</label>
+            </div>
+            <!-- Question 6 -->
+            <div class="question">
+                <h3>6. What is an 'Amendment'?</h3>
+                <label><input type="radio" name="q6" value="A change or addition to a law or document">A change or addition to a law or document</label><br>
+                <label><input type="radio" name="q6" value="A legal penalty for wrongdoing">A legal penalty for wrongdoing</label><br>
+                <label><input type="radio" name="q6" value="A contract between two parties">A contract between two parties</label>
+            </div>
+            <!-- Question 7 -->
+            <div class="question">
+                <h3>7. What is 'Homicide'?</h3>
+                <label><input type="radio" name="q7" value="The unlawful killing of a person">The unlawful killing of a person</label><br>
+                <label><input type="radio" name="q7" value="The act of theft">The act of theft</label><br>
+                <label><input type="radio" name="q7" value="The act of fraud">The act of fraud</label>
+            </div>
+            <!-- Question 8 -->
+            <div class="question">
+                <h3>8. Who is an 'Approver' in legal terms?</h3>
+                <label><input type="radio" name="q8" value="An accomplice who turns witness for the prosecution">An accomplice who turns witness for the prosecution</label><br>
+                <label><input type="radio" name="q8" value="A judge who approves cases">A judge who approves cases</label><br>
+                <label><input type="radio" name="q8" value="A lawyer who defends a case">A lawyer who defends a case</label>
+            </div>
+            <!-- Question 9 -->
+            <div class="question">
+                <h3>9. What does 'Breach of Contract' mean?</h3>
+                <label><input type="radio" name="q9" value="Failure to fulfill the terms of a contract">Failure to fulfill the terms of a contract</label><br>
+                <label><input type="radio" name="q9" value="Negotiating a new contract">Negotiating a new contract</label><br>
+                <label><input type="radio" name="q9" value="Cancelling a contract legally">Cancelling a contract legally</label>
+            </div>
+            <!-- Question 10 -->
+            <div class="question">
+                <h3>10. What is 'Capital Punishment'?</h3>
+                <label><input type="radio" name="q10" value="The death penalty for a serious crime">The death penalty for a serious crime</label><br>
+                <label><input type="radio" name="q10" value="Life imprisonment for a crime">Life imprisonment for a crime</label><br>
+                <label><input type="radio" name="q10" value="A fine imposed for an offense">A fine imposed for an offense</label>
+            </div>
             <button type="button" onclick="submitQuiz()">Submit Quiz</button>
         </form>
     </div>
@@ -68,7 +136,7 @@
 
             // Store score in localStorage and redirect to the result page
             localStorage.setItem('quizScore', score);
-            window.location.href = 'result.html';  // Redirect to result page
+            window.location.href = 'result.html';  // Redirect to the result page
         }
     </script>
 </body>
